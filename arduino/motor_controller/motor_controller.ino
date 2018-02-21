@@ -17,12 +17,12 @@
 #define RIGHT_BRK   8    /* Brake */
 
 /* Left encoder pins */
-#define LEFT_ENC_A  4    /* Left encoder pin A */
-#define LEFT_ENC_B  5    /* Left encoder pin B */
+#define LEFT_ENC_A  6    /* Left encoder pin A */
+#define LEFT_ENC_B  7    /* Left encoder pin B */
 
 /* Right encoder pins */
-#define RIGHT_ENC_A  6   /* Right encoder pin A */
-#define RIGHT_ENC_B  7   /* Right encoder pin B */
+#define RIGHT_ENC_A  4   /* Right encoder pin A */
+#define RIGHT_ENC_B  5   /* Right encoder pin B */
 
 /*
 ** GlOBAL VARIABLES
