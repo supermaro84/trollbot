@@ -1,16 +1,21 @@
 <launch>
 <include file="$(find trollbot)/launch/trollin.launch"/>
-<include file="$(find roboclaw_node)/launch/roboclaw.launch"/>
-<!-- RIGHT LIDAR NODE -->
+<include file="$(find trollbot)/launch/roboclaw_1.launch"/>
+<!--<include file="$(find freenect_launch)/launch/freenect.launch"/>-->
+<include file="$(find trollbot)/launch/kinect2laser.launch"/>
+
+<!-- RIGHT LIDAR NODE 
 	<node pkg="rplidar_ros"			type="rplidarNode"	name="rplidar">
 		<param name="serial_port"	type="string"	value="/dev/rplidar"/>
-</node>
+</node>-->
 
   <node pkg="tf2_ros" type="static_transform_publisher" name="baselink2lidar" args="0.15 0 0 3.14159 0 0 base_link laser_frame"/>
   <node pkg="tf2_ros" type="static_transform_publisher" name="baselink2imu" args="0.15 0 0.05 0 0 0 base_link imu"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="baselink2cam" args="0.15 0 0.3 0 0 0 base_link camera_link"/>
 
+<!--
   <node pkg="rosflight" type="rosflight_io" name="rosflight_node">
 	<param name="port" type="string" value="/dev/naze"/>
 	<param name="frame_id" type="string" value="imu"/>
-  </node>
+  </node>-->
 </launch>

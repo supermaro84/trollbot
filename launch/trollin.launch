@@ -14,7 +14,7 @@
     <param name="autorepeat_rate" value="100"/>
   </node>
   <node pkg="teleop_twist_joy" type="teleop_node" name="teleop_node">
-    <param name="scale_linear" value="0.5"/>
+    <param name="scale_linear" value="1"/>
     <param name="scale_angular" value="1.5"/>
   </node>
 </launch>
